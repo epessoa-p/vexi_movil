@@ -9,11 +9,35 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_secure_storage: ^11.2.0
+  http: ^1.6.0
+  image_picker: ^1.2.4
+  intl: ^0.20.2
+  mobile_scanner: ^7.5.0
+  provider: ^6.1.5+1
+  share_plus: ^13.3.1
+  url_launcher: ^6.3.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/brand/
+
+# Ícono de la app: solo el dibujo del logo (sin el texto «vexi»), sobre blanco.
+# Regenerar con: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/brand/app_icon.png
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/brand/app_icon_foreground.png
+  remove_alpha_ios: true
+  min_sdk_android: 23

@@ -47,6 +47,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Para fotografiar a la mascota, adjuntar informes y leer el código de barras de los productos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Para elegir una foto de la mascota desde la galería.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

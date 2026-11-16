@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- La app habla con la API de Vexi. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Fotos de la mascota y lectura de códigos de barras del inventario. -->
+    <uses-permission android:name="android.permission.CAMERA"/>
     <application
         android:label="Vexi"
         android:name="${applicationName}"
